@@ -1,0 +1,22 @@
+defaults: &defaults
+  adapter: postgresql
+  database: fitface
+  username: techstars
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *defaults
+  password:
+
+staging:
+  <<: *defaults
+  password: 
+
+test:
+  <<: *defaults
+  password:
+
+production:
+  <<: *defaults
+  password: techstars

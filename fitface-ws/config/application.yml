@@ -1,0 +1,24 @@
+defaults: &defaults
+  email: "techstars.developers@gmail.com"
+  questions: ["What is the name of your first dog?", "What is the name of your favorite teacher?", "What is your mother's maiden name?"]
+  gender: ["Male", "Female"]
+  matches: ["Sports", "Training", "Martial Arts", "Community"]
+  sports: ["Football", "Soccer", "Baseball", "Basketball", "Hockey", "Swimming", "Wrestling"]
+  training: ["Heavy Weights", "Medium Weigts", "Light Weights", "High Intensity", "Pure Cardio", "Improve Health", "Improve Health", "Cutting/Shredding"]
+  martial: ["Karate", "Taekwando", "Jujitso", "Muay Tai"]
+  community: ["Pick-up Basketball", "Basketball Team", "Softball Team", "Baseball Team", "Football Team", "Soccer Team", "Yoga Class", "Team Training", "Group Jog/Run", "Hiking Adventure", "Martial Arts", "Health/Nutrition"]
+  category_type: ["Practice", "Play", "Follow", "Training"]
+
+development:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+
